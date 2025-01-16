@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="description" content="PugdigO - Barking">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>PugdigO</title>
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<img class="logo" src="images/pug.png"><h1 class="logo-name">PUGDIGO</h1>
+
+<br>
+
+<div class="container">
+
+<div class="controls">
+
+<select id="breedSelect">
+
+<option value="random">Random Breed</option>
+
+</select>
+
+<button onclick="getNewDog()">Get New Dog</button>
+
+<button onclick="downloadImage()" class="download-btn">Save Image</button>
+
+</div>
+
+<div class="image-container">
+
+<img id="dogImage" src="/api/placeholder/400/300" alt="Random Dog">
+
+</div>
+
+<div id="loading" class="loading">Fetching a new furry friend...</div>
+        
+<div id="imageCount"></div>
+
+<div class="breed-info" id="breedInfo"></div>
+
+<div class="stats">
+
+<h3>📊 Statistics</h3>
+
+<div class="stat-grid">
+
+<div class="stat-item">
+
+<strong>Total Images Viewed:</strong>
+
+<div id="totalViewed">0</div>
+
+</div>
+
+<div class="stat-item">
+
+<strong>Current Breed Count:</strong>
+
+<div id="breedCount">0</div>
+
+</div>
+
+<div class="stat-item">
+
+<strong>Images Downloaded:</strong>
+
+<div id="downloadCount">0</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/bark.js"></script>
+
+</body>
+
+</html>
